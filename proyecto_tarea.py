@@ -134,6 +134,7 @@ def main():
 
     # Si la respuesta es "No", continuar con la siguiente pregunta
     elif discapacidad == "No":
+        discapacidad_1 = "n/a"
         pass   
     
     # Campo de entrada de texto obligatorio
@@ -146,6 +147,7 @@ def main():
 
     # Si la respuesta es "No", continuar con la siguiente pregunta
     elif Sufre_Enfermedad == "No":
+        Sufre_Enfermedad_1 = "n/a"
         pass
     
 
@@ -159,6 +161,7 @@ def main():
 
     # Si la respuesta es "No", continuar con la siguiente pregunta
     elif lesion == "No":
+        lesion_1 = "n/a"
         pass
     
 
@@ -172,6 +175,7 @@ def main():
 
     # Si la respuesta es "No", continuar con la siguiente pregunta
     elif Alta_Competencia == "No":
+        Alta_Competencia_1 = "n/a"
         pass
     
     
@@ -188,6 +192,7 @@ def main():
 
     # Si la respuesta es "No", continuar con la siguiente pregunta
     elif disciplina_que_practica == "Baloncesto, Vóleibol, Bolas Criollas, Softbol, Futbol Sala, Ajedrez":
+        disciplina_que_practica_1 = "n/a"  
         pass
 
     # Botón para enviar el formulario
