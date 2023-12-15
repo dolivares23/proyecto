@@ -186,14 +186,17 @@ def main():
     disciplina_que_practica = st.selectbox("Elija una Disciplina de la Lista a Continuación:", ["", "Baloncesto","Vóleibol","Bolas Criollas","Softbol","Futbol Sala","Ajedrez","Otra"])
     
     # Si la respuesta es "otra", crear otra pregunta
-    if disciplina_que_practica == "Otra":
+    if disciplina_que_practica != "Otra":
+        disciplina_que_practica = disciplina_que_practica
+        disciplina_que_practica_1 = "n/a"
+    else:    
         st.write("Por favor, indique disciplina.")
         disciplina_que_practica_1 = st.text_input("Indique la otra disciplina")
 
     # Si la respuesta es "No", continuar con la siguiente pregunta
-    elif disciplina_que_practica == "Baloncesto, Vóleibol, Bolas Criollas, Softbol, Futbol Sala, Ajedrez":
-        disciplina_que_practica_1 = "n/a"  
-        pass
+   # elif disciplina_que_practica == "Baloncesto, Vóleibol, Bolas Criollas, Softbol, Futbol Sala, Ajedrez":
+        #disciplina_que_practica_1 = "n/a"  
+        #pass
 
     # Botón para enviar el formulario
     if st.button("Enviar"):
